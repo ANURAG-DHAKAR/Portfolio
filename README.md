@@ -1,11 +1,44 @@
 
-  # 3D Storytelling Portfolio Website (Community)
+# 👋 Hi, I'm Anurag Dhakar
 
-  This is a code bundle for 3D Storytelling Portfolio Website (Community). The original project is available at https://www.figma.com/design/XiNQdSExQC8UD6LVQMuMKC/3D-Storytelling-Portfolio-Website--Community-.
+💻 Full Stack Developer | 🎯 Passionate Learner | 🚀 Tech Enthusiast  
 
-  ## Running the code
+---
 
-  Run `npm i` to install the dependencies.
+## 🌐 Live Portfolio
+👉 [Visit My Portfolio](https://your-portfolio-link.com)
 
-  Run `npm run dev` to start the development server.
+---
+
+## 📌 About Me
+
+
+- 💡 Interested in Web Development & Software Engineering
+- 🔥 Skilled in building responsive and scalable applications
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- HTML
+- CSS
+- JavaScript
+- React.js
+- Boostrap
+
+**Backend:**
+- Node.js / PHP / 
+
+**Database:**
+- MySQL / MongoDB
+
+**Tools:**
+- Git
+- GitHub
+- VS Code
+- 
+## ⭐ Support
+
+If you like my work, give a ⭐ to this repo!
   
