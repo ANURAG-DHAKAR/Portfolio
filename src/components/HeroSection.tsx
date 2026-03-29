@@ -85,7 +85,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="text-white/70 text-base md:text-lg max-w-2xl mx-auto mb-40 leading-relaxed"
+          className="text-white/70 text-base md:text-lg max-w-2xl mx-auto mb-40  leading-relaxed"
         >
           Crafting scalable web applications with modern technologies like React, JavaScript, and APIs.
           Building fast, responsive, and user-focused digital experiences.
@@ -121,12 +121,12 @@ export function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="absolute bottom-20 left-0 right-0 flex justify-center gap-12 md:gap-24"
+          className="absolute bottom-35 left-0 right-0 flex justify-center gap-12 md:gap-24"
         >
           {[
-            { number: '20+', label: 'Projects' },
-            { number: '5+', label: 'Years Exp.' },
-            { number: '15+', label: 'Happy Clients' },
+            { number: '10+', label: 'Projects' },
+            { number: '1+', label: 'Years Exp.' },
+            { number: '5+', label: 'Happy Clients' },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl md:text-4xl text-white mb-1">{stat.number}</div>
