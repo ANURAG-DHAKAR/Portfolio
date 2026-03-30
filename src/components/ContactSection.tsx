@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, GitBranch, Twitter, Send, Camera } from 'lucide-react';
+import { Mail, Phone, MapPin, ExternalLink, GitBranch, Send, Camera } from 'lucide-react';
 
 export function ContactSection() {
   const [ref, inView] = useInView({
@@ -114,7 +114,7 @@ export function ContactSection() {
               <h3 className="text-xl text-white mb-4">Follow Me</h3>
               <div className="flex gap-4">
                 {[
-                  { icon: Linkedin, href: 'https://www.linkedin.com/in/anurag-dhakar-225a7037a/', label: 'LinkedIn' },
+                  { icon: ExternalLink, href: 'https://www.linkedin.com/in/anurag-dhakar-225a7037a/', label: 'LinkedIn' },
                   { icon: GitBranch, href: 'https://github.com/ANURAG-DHAKAR', label: 'GitHub' },
                   { icon: Mail, href: 'mailto:anuragdhakar447@gmail.com', label: 'Email' },
                   { icon: Phone, href: 'tel:+917303604248', label: 'Phone' },

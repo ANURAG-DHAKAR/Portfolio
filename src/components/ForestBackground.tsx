@@ -26,8 +26,10 @@ export function ForestBackground() {
       speedX: number;
       speedY: number;
       opacity: number;
+      canvas: HTMLCanvasElement;
 
-      constructor() {
+      constructor(canvas: HTMLCanvasElement) {
+        this.canvas = canvas;
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.size = Math.random() * 3 + 1;
@@ -40,12 +42,12 @@ export function ForestBackground() {
         this.x += this.speedX;
         this.y += this.speedY;
 
-        if (this.y > canvas.height) {
+        if (this.y > this.canvas.height) {
           this.y = 0;
-          this.x = Math.random() * canvas.width;
+          this.x = Math.random() * this.canvas.width;
         }
-        if (this.x > canvas.width) this.x = 0;
-        if (this.x < 0) this.x = canvas.width;
+        if (this.x > this.canvas.width) this.x = 0;
+        if (this.x < 0) this.x = this.canvas.width;
       }
 
       draw() {
@@ -60,7 +62,7 @@ export function ForestBackground() {
     // Create particles
     const particles: Particle[] = [];
     for (let i = 0; i < 50; i++) {
-      particles.push(new Particle());
+      particles.push(new Particle(canvas));
     }
 
     // Animation loop

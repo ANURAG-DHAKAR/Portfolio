@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import type { JSX } from 'react';
+import { useState, useEffect } from 'react';
 import { Navigation } from './components/Navigation';
 import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';

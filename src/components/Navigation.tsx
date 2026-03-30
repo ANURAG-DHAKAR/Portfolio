@@ -15,7 +15,7 @@ const navItems = [
   
 ];
 
-export function Navigation({ currentSection }: NavigationProps) {
+export function Navigation({ currentSection: _currentSection }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -37,7 +37,7 @@ export function Navigation({ currentSection }: NavigationProps) {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            {navItems.map((item, index) => (
+            {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}

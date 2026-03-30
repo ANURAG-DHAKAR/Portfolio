@@ -287,16 +287,6 @@ export function ProjectsSection() {
                 <div>
                   <h3 className="text-xl text-white mb-3 flex items-center gap-2">
                     <span className="w-8 h-px bg-green-400" />
-                    Research
-                  </h3>
-                  <p className="text-white/70 leading-relaxed">
-                    {selectedProject.research}
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="text-xl text-white mb-3 flex items-center gap-2">
-                    <span className="w-8 h-px bg-green-400" />
                     Solution
                   </h3>
                   <p className="text-white/70 leading-relaxed">
