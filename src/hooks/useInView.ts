@@ -38,5 +38,5 @@ export function useInView(
     };
   }, [triggerOnce, threshold]);
 
-  return [ref, inView];
+  return [ref as RefObject<HTMLDivElement>, inView];
 }
