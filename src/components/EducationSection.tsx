@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { GraduationCap, Award, Calendar } from 'lucide-react';
 

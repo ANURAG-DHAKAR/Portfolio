@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { useState } from 'react';
 import { ExternalLink, X } from 'lucide-react';
