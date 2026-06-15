@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { useInView } from '../hooks/useInView';
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send, Instagram } from 'lucide-react';
+import emailjs from "@emailjs/browser";
 
 export function ContactSection() {
   const [ref, inView] = useInView({
@@ -12,14 +13,44 @@ export function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     message: '',
   });
-
-  const handleSubmit = (e: React.FormEvent) => {
+  
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert('Thank you for your message! This is a demo, so the form is not actually submitted.');
-    setFormData({ name: '', email: '', message: '' });
+
+    setLoading(true);
+
+    try {
+      await emailjs.send(
+        "service_yq4093o",
+        "template_nmxu6tr",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          from_phone: formData.phone,
+          message: formData.message,
+        },
+        "amrxFZHv1ZYL88jSl"
+      );
+
+      alert("Message sent successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Failed to send message.");
+    } finally {
+      setLoading(false);
+    }
   };
+  const [loading, setLoading] = useState(false);
 
   return (
     <section
@@ -29,7 +60,7 @@ export function ContactSection() {
     >
       {/* Semi-transparent backdrop for readability */}
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />
-      
+
       <div className="max-w-6xl mx-auto w-full relative z-10">
         {/* Header */}
         <motion.div
@@ -44,7 +75,7 @@ export function ContactSection() {
             Get In Touch
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto">
-            Have a project in mind? Let's discuss how we can work together to create 
+            Have a project in mind? Let's discuss how we can work together to create
             something amazing.
           </p>
         </motion.div>
@@ -59,7 +90,7 @@ export function ContactSection() {
           >
             <div>
               <h3 className="text-2xl text-white mb-6">Contact Information</h3>
-              
+
               <div className="space-y-4">
                 <motion.a
                   href="mailto:kiran.shetty@example.com"
@@ -180,6 +211,23 @@ export function ContactSection() {
                   required
                 />
               </div>
+              <div>
+                <label className="block text-white/70 text-sm mb-2 tracking-wider uppercase">
+                  Phone Number
+                </label>
+                <input
+                  type="tel"
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value.replace(/\D/g, "").slice(0, 10) })}
+                  maxLength={10}
+                  inputMode="numeric"
+                  pattern="[0-9]{10}"
+                  className="w-full px-4 py-3 bg-white/5 border border-white/10 text-white placeholder-white/30 focus:outline-none focus:border-white/30 transition-colors"
+                  placeholder="+91xxxxx"
+                  required
+                />
+              </div>
+
 
               <div>
                 <label className="block text-white/70 text-sm mb-2 tracking-wider uppercase">
@@ -197,12 +245,13 @@ export function ContactSection() {
 
               <motion.button
                 type="submit"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full px-8 py-4 bg-white text-black hover:bg-white/90 transition-colors flex items-center justify-center gap-2 tracking-wider"
+                disabled={loading}
+                whileHover={{ scale: loading ? 1 : 1.02 }}
+                whileTap={{ scale: loading ? 1 : 0.98 }}
+                className="w-full px-8 py-4 bg-white text-black hover:bg-white/90 transition-colors flex items-center justify-center gap-2 tracking-wider disabled:opacity-50"
               >
                 <Send className="w-4 h-4" />
-                SEND MESSAGE
+                {loading ? "SENDING..." : "SEND MESSAGE"}
               </motion.button>
             </form>
           </motion.div>
