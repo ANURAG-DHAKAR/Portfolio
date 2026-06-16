@@ -29,7 +29,7 @@ export function AboutSection() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="absolute inset-0 flex items-center justify-center">
                 <img
-                  src="/Images/Anupic.jpeg"   // 👉 apni image ka path
+                  src="/Images/dp.jpeg"   // 👉 apni image ka path
                   alt="Profile"
                   className="w-120 h-120 object-cover rounded-full border-4 border-white/20 shadow-xl"
                 />
