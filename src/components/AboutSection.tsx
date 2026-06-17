@@ -84,9 +84,7 @@ export function AboutSection() {
           <div className="space-y-4 text-white/70 leading-relaxed">
             <p className="text-white/70 leading-relaxed">
               Hi! I'm <span className="font-semibold italic">ANURAG DHAKAR</span>, a passionate
-              Front-End Developer dedicated to creating dynamic and interactive web experiences.
-              I love learning modern web technologies and I'm currently diving deep into
-              JavaScript and React to build responsive and user-friendly websites.
+              Full-Stack Developer with a strong focus on creating seamless and engaging user experiences. My journey in web development has been driven by a love for coding, problem-solving, and continuous learning.
 
               <br /><br />
 
