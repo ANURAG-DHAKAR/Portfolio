@@ -114,6 +114,7 @@ export function HeroSection() {
         {/* CTA Buttons */} <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.8 }} className="flex flex-col sm:flex-row gap-4 justify-center items-center" > <motion.a href="#projects" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="px-8 py-4 bg-white text-black text-sm tracking-wider hover:bg-white/90 transition-colors" > VIEW PROJECTS </motion.a> <motion.a href="#contact" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="px-8 py-4 border border-white/30 text-white text-sm tracking-wider hover:bg-white/10 transition-colors" > GET IN TOUCH </motion.a> </motion.div>
 
       </div>
+      
     </section>
   );
 }

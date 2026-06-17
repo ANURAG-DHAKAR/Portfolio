@@ -23,7 +23,7 @@ export function Navigation({ currentSection }: NavigationProps) {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-6"
+        className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-6 bg-black/80 backdrop-blur-sm shadow-lg"
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}

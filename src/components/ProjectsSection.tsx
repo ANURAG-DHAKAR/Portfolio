@@ -14,7 +14,8 @@ const projects = [
     impact: 'Improved user experience with faster navigation and real-time updates, making ordering seamless.',
     image: './Images/Foodhub.png',
     live: 'https://foodhub-f.onrender.com/',
-    github: 'https://github.com/ANURAG-DHAKAR/FoodHub'
+    github: 'https://github.com/ANURAG-DHAKAR/FoodHub',
+    research: 'Conducted user interviews and analyzed existing food ordering platforms to identify pain points and desired features.'
   },
   {
     id: 2,
@@ -26,7 +27,8 @@ const projects = [
     impact: 'Enhanced brand visibility and improved client engagement.',
     image: './Images/Luminark.png',
     live: 'https://luminark.dhakadpureveda.in/',
-    github: 'https://github.com/SANDEEP-DHAKAR/Luminark_Elevator'
+    github: 'https://github.com/SANDEEP-DHAKAR/Luminark_Elevator',
+    research: 'Analyzed competitor websites and industry standards to create a user-friendly and visually appealing corporate site.'
   },
   {
     id: 3,
@@ -38,7 +40,8 @@ const projects = [
     impact: 'Improved communication between school and parents/students.',
     image: './Images/stjpschool.png',
     live: 'https://www.stjpschool.in/',
-    github: 'https://github.com/grit-eit/stjpschool'
+    github: 'https://github.com/grit-eit/stjpschool',
+    research: 'Researched educational websites to understand the needs of schools, parents, and students for effective information dissemination.'
   },
   {
     id: 4,
@@ -50,7 +53,8 @@ const projects = [
     impact: 'Improved user engagement and accessibility.',
     image: './Images/montfort.png',
     live: 'https://montfortschool.co.in/',
-    github: 'https://github.com/grit-eit/montfortschool'
+    github: 'https://github.com/grit-eit/montfortschool',
+    research: 'Studied modern educational websites to implement best practices in design and user experience for school websites.'
   },
   {
     id: 5,
@@ -62,7 +66,8 @@ const projects = [
     impact: 'Helped business establish online identity and reach more customers.',
     image: './Images/dhakadpureveda.png',
     live: 'https://dhakadpureveda.in/',
-    github: 'https://github.com/ANURAG-DHAKAR/My-Portfolio'
+    github: 'https://github.com/ANURAG-DHAKAR/My-Portfolio',
+    research: 'Analyzed local business websites and e-commerce trends to create an effective online presence for Ayurvedic products.'
   },
   {
     id: 6,
@@ -74,7 +79,8 @@ const projects = [
     impact: 'Reduced development time and improved productivity.',
     image: './Images/edu-tem.png',
     live: 'https://eduinnotech.com/templates/',
-    github: 'https://github.com/ANURAG-DHAKAR/Edutemplate-collection-Websites'
+    github: 'https://github.com/ANURAG-DHAKAR/Edutemplate-collection-Websites',
+    research: 'Studied popular web templates and design trends to create a versatile collection suitable for various projects.'
   },
   {
     id: 7,
@@ -86,7 +92,8 @@ const projects = [
     impact: 'Enhanced user engagement with interactive UI.',
     image: './Images/Birthdaywishes.png',
     live: 'https://anurag-dhakar.github.io/BirthdayWishes/',
-    github: 'https://github.com/ANURAG-DHAKAR/BirthdayWishes'
+    github: 'https://github.com/ANURAG-DHAKAR/BirthdayWishes',
+    research: 'Explored interactive web applications and animation techniques to create a unique birthday greeting experience.'
   },
   {
     id: 8,
@@ -98,7 +105,8 @@ const projects = [
     impact: 'Improved understanding of API integration and frontend logic.',
     image: './Images/e-com.png',
     live: 'https://anurag-dhakar.github.io/E-Commerce-Website',
-    github: 'https://github.com/ANURAG-DHAKAR/E-Commerce-Website'
+    github: 'https://github.com/ANURAG-DHAKAR/E-Commerce-Website',
+    research: 'Studied e-commerce platforms and API usage to implement a functional shopping experience with product data.'
   },
   {
     id: 9,
@@ -110,7 +118,8 @@ const projects = [
     impact: 'Strengthened core JavaScript concepts.',
     image: './Images/clock.png',
     live: 'https://anurag-dhakar.github.io/CLOCKbyJS/',
-    github: 'https://github.com/ANURAG-DHAKAR/CLOCKbyJS'
+    github: 'https://github.com/ANURAG-DHAKAR/CLOCKbyJS',
+    research: 'Explored JavaScript timing functions and DOM manipulation to create a functional analog clock with real-time updates.'
   },
   {
     id: 10,
@@ -122,7 +131,8 @@ const projects = [
     impact: 'Provided real-time data with clean UI.',
     image: './Images/weather.png',
     live: 'https://anurag-dhakar.github.io/Weather-Cast/',
-    github: 'https://github.com/ANURAG-DHAKAR/Weather-Cast'
+    github: 'https://github.com/ANURAG-DHAKAR/Weather-Cast',
+    research: 'Researched weather APIs and user interface design to create an intuitive and informative weather forecasting application.'
   }
 ];
 
@@ -214,7 +224,7 @@ export function ProjectsSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center  mt-22 p-4 bg-black/90 backdrop-blur-sm"
           onClick={() => setSelectedProject(null)}
         >
           <motion.div
@@ -222,7 +232,7 @@ export function ProjectsSection() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-gradient-to-br from-gray-900 to-black border border-white/20 max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+            className="bg-gradient-to-br from-gray-900 to-black border  border-white/20 max-w-4xl w-full max-h-[90vh] overflow-y-auto"
           >
             {/* Image */}
             <div className="aspect-[21/9] relative overflow-hidden">
@@ -237,7 +247,7 @@ export function ProjectsSection() {
                 onClick={() => setSelectedProject(null)}
                 className="absolute top-4 right-4 w-10 h-10 bg-white/10 backdrop-blur-sm hover:bg-white/20 flex items-center justify-center transition-all"
               >
-                <X className="w-5 h-5 text-white" />
+                <X style={{ color: 'black' }}  className="w-5 h-5 z-50" />
               </button>
             </div>
 
