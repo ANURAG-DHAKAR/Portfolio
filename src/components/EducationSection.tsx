@@ -38,7 +38,7 @@ export function EducationSection() {
     <section
       id="education"
       ref={ref}
-      className="min-h-screen flex items-center justify-center px-6 py-20 relative"
+      className="min-h-screen flex items-center justify-center px-6 py-25 relative"
     >
       {/* Semi-transparent backdrop for readability */}
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" />

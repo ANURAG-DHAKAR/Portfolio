@@ -3,7 +3,7 @@ import { ArrowDown } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-black flex items-center justify-center">
+    <section id="home" className="relative min-h-screen overflow-hidden bg-black flex items-center justify-center">
 
       {/* Background Image */}
       {/* Desktop Background */}

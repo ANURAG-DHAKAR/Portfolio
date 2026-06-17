@@ -12,8 +12,10 @@ const navItems = [
   { name: 'Skills', href: '#skills' },
   { name: 'Education', href: '#education' },
   { name: 'Projects', href: '#projects' },
-  
+
+
 ];
+
 
 export function Navigation({ currentSection }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -89,9 +91,8 @@ export function Navigation({ currentSection }: NavigationProps) {
                 {item.name}
               </a>
             ))}
-            <button className="mt-4 px-8 py-3 bg-white text-black text-sm tracking-wider">
-              HIRE ME
-            </button>
+            <motion.a href="#contact" onClick={() => setMobileMenuOpen(false)} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="mt-4 px-8 py-3 bg-white text-black text-sm tracking-wider"  > HIRE ME </motion.a>
+
           </div>
         </motion.div>
       )}
