@@ -59,10 +59,10 @@ export default function App() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-2 text-white/60 animate-bounce pointer-events-none">
+      {/* <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-2 text-white/60 animate-bounce pointer-events-none">
         <span className="text-xs tracking-widest">SCROLL</span>
         <div className="w-px h-12 bg-gradient-to-b from-white/60 to-transparent" />
-      </div>
+      </div> */}
     </div>
   );
 }

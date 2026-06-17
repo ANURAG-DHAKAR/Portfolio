@@ -62,7 +62,7 @@ export function AboutSection() {
             }}
             className="absolute -bottom-6 -right-6 bg-white text-black px-6 py-4 shadow-2xl"
           >
-            <div className="text-2xl">1+</div>
+            <div className="text-2xl">2+</div>
             <div className="text-xs tracking-wider">YEARS EXP</div>
           </motion.div>
         </motion.div>
