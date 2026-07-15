@@ -29,7 +29,7 @@ export function AboutSection() {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="absolute inset-0 flex items-center justify-center">
                 <img
-                  src="/Images/dp.jpeg"
+                  src="/Images/anurag.png"
                   alt="Profile"
                   className="
     w-70 h-70
