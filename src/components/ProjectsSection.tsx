@@ -6,6 +6,19 @@ import { ExternalLink, X } from 'lucide-react';
 const projects = [
   {
     id: 1,
+    title: 'Eduinnotech ',
+    category: 'Website',
+    description: 'Educational and technology solutions website',
+    problem: 'Users need a platform to access educational resources and technology solutions in one place.',
+    solution: 'Developed a responsive website with clear navigation, resource sections, and interactive elements to enhance user engagement.',
+    impact: 'Enhanced user experience and accessibility to educational resources and technology solutions.',
+    image: 'https://edustorage.sgp1.cdn.digitaloceanspaces.com/EduInnoTechMedia/website/school_logo/eduinnotech.png',
+    live: 'https://eduinnotech.com/',
+    github: 'https://github.com/ANURAG-DHAKAR',
+    research: 'Conducted user research and analyzed educational platforms to identify key features and design elements that would improve user engagement and accessibility.'
+  },
+  {
+    id: 2,
     title: 'FoodHuB',
     category: 'Full Stack Web App',
     description: 'Online food ordering platform built with React',
@@ -18,7 +31,7 @@ const projects = [
     research: 'Conducted user interviews and analyzed existing food ordering platforms to identify pain points and desired features.'
   },
   {
-    id: 2,
+    id: 3,
     title: 'Luminark Elevator',
     category: 'Business Website',
     description: 'Corporate website for elevator company',
@@ -31,7 +44,7 @@ const projects = [
     research: 'Analyzed competitor websites and industry standards to create a user-friendly and visually appealing corporate site.'
   },
   {
-    id: 3,
+    id: 4,
     title: 'St. J.P. School',
     category: 'Full Stack Website',
     description: 'School management and information platform',
@@ -44,7 +57,7 @@ const projects = [
     research: 'Researched educational websites to understand the needs of schools, parents, and students for effective information dissemination.'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Mont Fort School',
     category: 'Full Stack Website',
     description: 'Modern school website with structured UI',
@@ -57,7 +70,7 @@ const projects = [
     research: 'Studied modern educational websites to implement best practices in design and user experience for school websites.'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Dhakad Pureveda',
     category: 'Business Website',
     description: 'Ayurvedic product business website',
@@ -70,7 +83,7 @@ const projects = [
     research: 'Analyzed local business websites and e-commerce trends to create an effective online presence for Ayurvedic products.'
   },
   {
-    id: 6,
+    id: 7,
     title: 'Eduinnotech Templates',
     category: 'Frontend Collection',
     description: 'Collection of reusable website templates',
@@ -83,7 +96,7 @@ const projects = [
     research: 'Studied popular web templates and design trends to create a versatile collection suitable for various projects.'
   },
   {
-    id: 7,
+    id: 8,
     title: 'Birthday Wishes',
     category: 'Frontend Project',
     description: 'Interactive birthday greeting web app',
@@ -96,7 +109,7 @@ const projects = [
     research: 'Explored interactive web applications and animation techniques to create a unique birthday greeting experience.'
   },
   {
-    id: 8,
+    id: 9,
     title: 'E-Commerce App',
     category: 'Web App',
     description: 'Basic e-commerce platform using Fake API',
@@ -109,7 +122,7 @@ const projects = [
     research: 'Studied e-commerce platforms and API usage to implement a functional shopping experience with product data.'
   },
   {
-    id: 9,
+    id: 10,
     title: 'Analog Clock',
     category: 'JavaScript Project',
     description: 'Real-time analog clock',
@@ -122,7 +135,7 @@ const projects = [
     research: 'Explored JavaScript timing functions and DOM manipulation to create a functional analog clock with real-time updates.'
   },
   {
-    id: 10,
+    id: 11,
     title: 'Live Weather Cast',
     category: 'API Project',
     description: 'Weather forecasting web app',
