@@ -19,17 +19,18 @@ const projects = [
   },
   {
     id: 2,
-    title: 'FoodHuB',
-    category: 'Full Stack Web App',
-    description: 'Online food ordering platform built with React',
-    problem: 'Users struggle to find a simple and fast interface for browsing and ordering food online.',
-    solution: 'Developed a responsive React-based platform with dynamic food listings, cart system, and smooth UI/UX.',
-    impact: 'Improved user experience with faster navigation and real-time updates, making ordering seamless.',
-    image: './Images/Foodhub.png',
-    live: 'https://foodhub-f.onrender.com/',
-    github: 'https://github.com/ANURAG-DHAKAR/FoodHub',
-    research: 'Conducted user interviews and analyzed existing food ordering platforms to identify pain points and desired features.'
+    title: 'St. J.P. School',
+    category: 'Full Stack Website',
+    description: 'School management and information platform',
+    problem: 'Schools need a centralized platform for managing and displaying information.',
+    solution: 'Created a full stack website with dynamic content, announcements, and structured UI.',
+    impact: 'Improved communication between school and parents/students.',
+    image: './Images/stjpschool.png',
+    live: 'https://www.stjpschool.in/',
+    github: 'https://github.com/grit-eit/stjpschool',
+    research: 'Researched educational websites to understand the needs of schools, parents, and students for effective information dissemination.'
   },
+  
   {
     id: 3,
     title: 'Luminark Elevator',
@@ -45,19 +46,60 @@ const projects = [
   },
   {
     id: 4,
-    title: 'St. J.P. School',
-    category: 'Full Stack Website',
-    description: 'School management and information platform',
-    problem: 'Schools need a centralized platform for managing and displaying information.',
-    solution: 'Created a full stack website with dynamic content, announcements, and structured UI.',
-    impact: 'Improved communication between school and parents/students.',
-    image: './Images/stjpschool.png',
-    live: 'https://www.stjpschool.in/',
-    github: 'https://github.com/grit-eit/stjpschool',
-    research: 'Researched educational websites to understand the needs of schools, parents, and students for effective information dissemination.'
+    title: 'FoodHuB',
+    category: 'Full Stack Web App',
+    description: 'Online food ordering platform built with React',
+    problem: 'Users struggle to find a simple and fast interface for browsing and ordering food online.',
+    solution: 'Developed a responsive React-based platform with dynamic food listings, cart system, and smooth UI/UX.',
+    impact: 'Improved user experience with faster navigation and real-time updates, making ordering seamless.',
+    image: './Images/Foodhub.png',
+    live: 'https://foodhub-f.onrender.com/',
+    github: 'https://github.com/ANURAG-DHAKAR/FoodHub',
+    research: 'Conducted user interviews and analyzed existing food ordering platforms to identify pain points and desired features.'
   },
+
   {
     id: 5,
+    title: 'Jss-nursing-college',
+    category: 'College Website',
+    description: 'Nursing college website',
+    problem: 'College needed a professional online presence to attract students and showcase programs.',
+    solution: 'Developed a responsive website with program pages, contact forms, and clear navigation.',
+    impact: 'Enhanced brand visibility and improved student engagement.',
+    image: './Images/jss.png',
+    live: 'https://jss-nursingcollege.netlify.app/',
+    github: 'https://github.com/ANURAG-DHAKAR/Jss-nursing-college',
+    research: 'Researched college website design and user interface principles to create a professional and informative online profile for the nursing college.'
+  },
+  {
+    id: 6,
+    title: 'Reel.in - Instagram Reel Downloader',
+    category: 'API Project',
+    description: 'Instagram media downloader app',
+    problem: 'Users need a simple way to download Instagram content for offline viewing.',
+    solution: 'Built a responsive web app with API integration for seamless media downloading.',
+    impact: 'Provided a user-friendly solution for downloading Instagram content with a clean interface.',
+    image: './Images/insta.png',
+    live: 'https://videodowloader-nr6m.onrender.com/',
+    github: 'https://github.com/ANURAG-DHAKAR/YTStreamline',
+    research: 'Researched Instagram API integration and user interface design to create a seamless media downloading experience.'
+  }, 
+   {
+    id: 7,
+    title: 'OurMemories - Friendship',
+    category: 'Frontend Project',
+    description: 'Friendship memories sharing platform',
+    problem: 'Users want a platform to share and relive friendship memories in a creative way.',
+    solution: 'Developed a responsive web app with interactive features for sharing and viewing memories.',
+    impact: 'Provided a user-friendly solution for sharing friendship memories with a clean interface.',
+    image: './Images/ourmemories.png',
+    live: 'https://portfolio-anuragdhakar447-2899s-projects.vercel.app/',
+    github: 'https://github.com/ANURAG-DHAKAR/Bestie',
+    research: 'Researched Instagram API integration and user interface design to create a seamless media downloading experience.'
+  }, 
+
+  {
+    id: 8,
     title: 'Mont Fort School',
     category: 'Full Stack Website',
     description: 'Modern school website with structured UI',
@@ -70,7 +112,7 @@ const projects = [
     research: 'Studied modern educational websites to implement best practices in design and user experience for school websites.'
   },
   {
-    id: 6,
+    id: 9,
     title: 'Dhakad Pureveda',
     category: 'Business Website',
     description: 'Ayurvedic product business website',
@@ -83,7 +125,7 @@ const projects = [
     research: 'Analyzed local business websites and e-commerce trends to create an effective online presence for Ayurvedic products.'
   },
   {
-    id: 7,
+    id: 10,
     title: 'Eduinnotech Templates',
     category: 'Frontend Collection',
     description: 'Collection of reusable website templates',
@@ -96,7 +138,7 @@ const projects = [
     research: 'Studied popular web templates and design trends to create a versatile collection suitable for various projects.'
   },
   {
-    id: 8,
+    id: 11,
     title: 'Birthday Wishes',
     category: 'Frontend Project',
     description: 'Interactive birthday greeting web app',
@@ -109,7 +151,7 @@ const projects = [
     research: 'Explored interactive web applications and animation techniques to create a unique birthday greeting experience.'
   },
   {
-    id: 9,
+    id: 12,
     title: 'E-Commerce App',
     category: 'Web App',
     description: 'Basic e-commerce platform using Fake API',
@@ -122,7 +164,7 @@ const projects = [
     research: 'Studied e-commerce platforms and API usage to implement a functional shopping experience with product data.'
   },
   {
-    id: 10,
+    id: 13,
     title: 'Analog Clock',
     category: 'JavaScript Project',
     description: 'Real-time analog clock',
@@ -135,18 +177,32 @@ const projects = [
     research: 'Explored JavaScript timing functions and DOM manipulation to create a functional analog clock with real-time updates.'
   },
   {
-    id: 11,
+    id: 14,
+    title: 'Jha Financial Services',
+    category: 'Business Website',
+    description: 'Financial services company website',
+    problem: 'Company needed a professional online presence to attract clients and showcase services.',
+    solution: 'Developed a responsive website with service pages, contact forms, and clear navigation.',
+    impact: 'Enhanced brand visibility and improved client engagement.',
+    image: './Images/financial.png',
+    live: 'https://financial-services-gold.vercel.app/',
+    github: 'https://github.com/ANURAG-DHAKAR/Financial-services',
+    research: 'Researched financial services websites and user interface design to create a professional and informative company profile.'
+  },
+  {
+    id: 15,
     title: 'Live Weather Cast',
     category: 'API Project',
     description: 'Weather forecasting web app',
     problem: 'Users need real-time weather updates in a simple interface.',
     solution: 'Built a weather app using API integration and Bootstrap UI.',
     impact: 'Provided real-time data with clean UI.',
-    image: './Images/weather.png',
-    live: 'https://anurag-dhakar.github.io/Weather-Cast/',
+    image: './Images/Ravi_Trek.png',
+    live: 'https://ravi-hikies.netlify.app/',
     github: 'https://github.com/ANURAG-DHAKAR/Weather-Cast',
     research: 'Researched weather APIs and user interface design to create an intuitive and informative weather forecasting application.'
-  }
+  },
+  
 ];
 
 export function ProjectsSection() {
