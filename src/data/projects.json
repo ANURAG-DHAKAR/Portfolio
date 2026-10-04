@@ -1,5 +1,18 @@
 [
   {
+    "id": 2,
+    "title": "St. J.P. School",
+    "category": "Full Stack Website",
+    "description": "School management and information platform",
+    "problem": "Schools need a centralized platform for managing and displaying information.",
+    "solution": "Created a full stack website with dynamic content, announcements, and structured UI.",
+    "impact": "Improved communication between school and parents/students.",
+    "image": "./Images/stjpschool.png",
+    "live": "https://www.stjpschool.in/",
+    "github": "https://github.com/grit-eit/stjpschool",
+    "research": "Researched educational websites to understand the needs of schools, parents, and students for effective information dissemination."
+  },
+  {
     "id": 1,
     "title": "Eduinnotech",
     "category": "Website",
@@ -13,17 +26,17 @@
     "research": "Conducted user research and analyzed educational platforms to identify key features and design elements that would improve user engagement and accessibility."
   },
   {
-    "id": 2,
-    "title": "St. J.P. School",
-    "category": "Full Stack Website",
-    "description": "School management and information platform",
-    "problem": "Schools need a centralized platform for managing and displaying information.",
-    "solution": "Created a full stack website with dynamic content, announcements, and structured UI.",
-    "impact": "Improved communication between school and parents/students.",
-    "image": "./Images/stjpschool.png",
-    "live": "https://www.stjpschool.in/",
-    "github": "https://github.com/grit-eit/stjpschool",
-    "research": "Researched educational websites to understand the needs of schools, parents, and students for effective information dissemination."
+    "id": 16,
+    "title": "Pine N Peak ",
+    "category": "Hotel & Resort",
+    "description": "City-based lodging for short stays and business trips.",
+    "problem": "A specific challenge or pain point that needs to be addressed.",
+    "solution": "A targeted strategy or action plan implemented to resolve the issue.",
+    "impact": "The measurable positive outcome or change resulting from the solution.",
+    "image": "./Images/screenshot-2026-10-04-221326-png-1791140411403.png",
+    "live": "https://zhotel.onrender.com/",
+    "github": "https://github.com/ANURAG-DHAKAR/Portfolio",
+    "research": "Gathering data, analyzing root causes, and exploring viable options."
   },
   {
     "id": 4,
@@ -193,18 +206,5 @@
     "live": "https://ravi-hikies.netlify.app/",
     "github": "https://github.com/ANURAG-DHAKAR/Weather-Cast",
     "research": "Researched weather APIs and user interface design to create an intuitive and informative weather forecasting application."
-  },
-  {
-    "id": 16,
-    "title": "Pine N Peak ",
-    "category": "Hotel & Resort",
-    "description": "City-based lodging for short stays and business trips.",
-    "problem": "A specific challenge or pain point that needs to be addressed.",
-    "solution": "A targeted strategy or action plan implemented to resolve the issue.",
-    "impact": "The measurable positive outcome or change resulting from the solution.",
-    "image": "./Images/screenshot-2026-10-04-221326-png-1791140411403.png",
-    "live": "https://zhotel.onrender.com/",
-    "github": "https://github.com/ANURAG-DHAKAR/Portfolio",
-    "research": "Gathering data, analyzing root causes, and exploring viable options."
   }
 ]
