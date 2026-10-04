@@ -193,5 +193,18 @@
     "live": "https://ravi-hikies.netlify.app/",
     "github": "https://github.com/ANURAG-DHAKAR/Weather-Cast",
     "research": "Researched weather APIs and user interface design to create an intuitive and informative weather forecasting application."
+  },
+  {
+    "id": 16,
+    "title": "Pine N Peak ",
+    "category": "Hotel & Resort",
+    "description": "City-based lodging for short stays and business trips.",
+    "problem": "A specific challenge or pain point that needs to be addressed.",
+    "solution": "A targeted strategy or action plan implemented to resolve the issue.",
+    "impact": "The measurable positive outcome or change resulting from the solution.",
+    "image": "./Images/screenshot-2026-10-04-221326-png-1791140411403.png",
+    "live": "https://zhotel.onrender.com/",
+    "github": "https://github.com/ANURAG-DHAKAR/Portfolio",
+    "research": "Gathering data, analyzing root causes, and exploring viable options."
   }
 ]
