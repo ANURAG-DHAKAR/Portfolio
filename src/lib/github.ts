@@ -20,6 +20,11 @@ async function gh<T>(token: string, path: string, init: RequestInit = {}): Promi
   });
   if (!res.ok) {
     const body = await res.json().catch(() => ({}));
+    if (res.status === 403 && init.method && init.method !== 'GET') {
+      throw new Error(
+        'Token can read but not write. Edit the token on GitHub and set Repository permissions → Contents → "Read and write" for this repo.',
+      );
+    }
     throw new Error(`GitHub ${res.status}: ${body.message ?? res.statusText}`);
   }
   return res.json();
@@ -37,7 +42,11 @@ function encodeBase64Utf8(text: string) {
   return btoa(bin);
 }
 
-/** Checks the token can push to the repo. */
+/**
+ * Checks the token can see the repo. Note: for fine-grained tokens `permissions.push`
+ * reflects the user's role, not the token's scopes, so a read-only token still passes
+ * here and is only caught on the first write.
+ */
 export async function verifyToken(token: string) {
   const repo = await gh<{ permissions?: { push?: boolean } }>(token, '');
   if (!repo.permissions?.push) {
