@@ -1,10 +1,21 @@
 import { motion } from 'motion/react';
 import { useInView } from '../hooks/useInView';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send, Instagram } from 'lucide-react';
 import emailjs from "@emailjs/browser";
 
-export function ContactSection() {
+export function ContactSection({ onSecretUnlock }: { onSecretUnlock?: () => void }) {
+  // Secret admin entry: tap the © symbol 5 times within 2 seconds.
+  const secretTaps = useRef<number[]>([]);
+  const handleSecretTap = () => {
+    const now = Date.now();
+    secretTaps.current = [...secretTaps.current.filter((t) => now - t < 2000), now];
+    if (secretTaps.current.length >= 5) {
+      secretTaps.current = [];
+      onSecretUnlock?.();
+    }
+  };
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -265,7 +276,7 @@ export function ContactSection() {
           className="mt-20 pt-8 border-t border-white/10 text-center"
         >
           <p className="text-white/40 text-sm">
-            © 2024 Anurag Dhakar. All rights reserved.
+            <span onClick={handleSecretTap} className="cursor-default select-none">©</span> 2024 Anurag Dhakar. All rights reserved.
           </p>
         </motion.div>
       </div>

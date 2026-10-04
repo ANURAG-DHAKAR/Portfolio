@@ -9,10 +9,36 @@ import { EducationSection } from './components/EducationSection';
 import { ContactSection } from './components/ContactSection';
 import { LoadingScreen } from './components/LoadingScreen';
 import { ForestBackground } from './components/ForestBackground';
+import { AdminPanel } from './components/AdminPanel';
+import { initialProjects } from './data/projects';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
   const [currentSection, setCurrentSection] = useState(0);
+  const [projects, setProjects] = useState(initialProjects);
+  const [adminOpen, setAdminOpen] = useState(() => window.location.hash === '#admin');
+
+  useEffect(() => {
+    // Hidden admin shortcuts: Ctrl+Shift+A, or visiting /#admin
+    const onKey = (e: KeyboardEvent) => {
+      if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'a') {
+        e.preventDefault();
+        setAdminOpen(true);
+      }
+    };
+    const onHash = () => window.location.hash === '#admin' && setAdminOpen(true);
+    window.addEventListener('keydown', onKey);
+    window.addEventListener('hashchange', onHash);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      window.removeEventListener('hashchange', onHash);
+    };
+  }, []);
+
+  const closeAdmin = () => {
+    setAdminOpen(false);
+    if (window.location.hash === '#admin') history.replaceState(null, '', window.location.pathname);
+  };
 
   useEffect(() => {
     // Simulate loading
@@ -54,9 +80,11 @@ export default function App() {
         <AboutSection />
         <SkillsSection />
         <EducationSection />
-        <ProjectsSection />
-        <ContactSection />
+        <ProjectsSection projects={projects} />
+        <ContactSection onSecretUnlock={() => setAdminOpen(true)} />
       </div>
+
+      {adminOpen && <AdminPanel onClose={closeAdmin} onPublished={setProjects} />}
 
       {/* Scroll Indicator */}
       {/* <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-2 text-white/60 animate-bounce pointer-events-none">
