@@ -65,6 +65,19 @@
     "research": "Analyzed competitor websites and industry standards to create a user-friendly and visually appealing corporate site."
   },
   {
+    "id": 15,
+    "title": "Live Weather Cast",
+    "category": "API Project",
+    "description": "Weather forecasting web app",
+    "problem": "Users need real-time weather updates in a simple interface.",
+    "solution": "Built a weather app using API integration and Bootstrap UI.",
+    "impact": "Provided real-time data with clean UI.",
+    "image": "./Images/Ravi_Trek.png",
+    "live": "https://ravi-hikies.netlify.app/",
+    "github": "https://github.com/ANURAG-DHAKAR/Weather-Cast",
+    "research": "Researched weather APIs and user interface design to create an intuitive and informative weather forecasting application."
+  },
+  {
     "id": 5,
     "title": "Jss-nursing-college",
     "category": "College Website",
@@ -193,18 +206,5 @@
     "live": "https://financial-services-gold.vercel.app/",
     "github": "https://github.com/ANURAG-DHAKAR/Financial-services",
     "research": "Researched financial services websites and user interface design to create a professional and informative company profile."
-  },
-  {
-    "id": 15,
-    "title": "Live Weather Cast",
-    "category": "API Project",
-    "description": "Weather forecasting web app",
-    "problem": "Users need real-time weather updates in a simple interface.",
-    "solution": "Built a weather app using API integration and Bootstrap UI.",
-    "impact": "Provided real-time data with clean UI.",
-    "image": "./Images/Ravi_Trek.png",
-    "live": "https://ravi-hikies.netlify.app/",
-    "github": "https://github.com/ANURAG-DHAKAR/Weather-Cast",
-    "research": "Researched weather APIs and user interface design to create an intuitive and informative weather forecasting application."
   }
 ]
