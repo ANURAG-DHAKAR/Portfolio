@@ -65,6 +65,19 @@
     "research": "Analyzed competitor websites and industry standards to create a user-friendly and visually appealing corporate site."
   },
   {
+    "id": 17,
+    "title": "Personal travel journal · India",
+    "category": "Travel  ",
+    "description": "Ai created website",
+    "problem": "",
+    "solution": "",
+    "impact": "",
+    "image": "./Images/screenshot-2026-11-07-234700-png-1794075433176.png",
+    "live": "https://india-journey-chronicles.lovable.app/",
+    "github": "",
+    "research": ""
+  },
+  {
     "id": 15,
     "title": "Live Weather Cast",
     "category": "API Project",
